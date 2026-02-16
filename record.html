@@ -6,32 +6,53 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web dictaphone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="container">
         <header>
             <h1>Web dictaphone</h1>
         </header>
-        <section class="main-controls">
-            <canvas class="visualizer" height="60px"></canvas>
-            <div id="buttons">
-                <button class="record">Record</button>
-                <button class="stop">Stop</button>
+        <div class="audio-recording-block">
+            <div class="audio-recording-text">
+                <p>Answer the questions.</p>
             </div>
-        </section>
-        <section class="sound-clips">
-        </section>
-    </div>
-    <label for="toggle">?</label>
-    <input type="checkbox" id="toggle">
-    <aside>
-        <h2>Information</h2>
+            <div class="audio-recording">
+                <button class="audio-recording-button">
+                    <span class="audio-recording-microphone">
+                        <i class="fas fa-microphone"></i>
+                    </span>
+                    <span class="audio-recording-text">Start Record</span>
+                    <span class="audio-recording-time">03:00</span>
+                </button>
+            </div>
+        </div>
 
-        <p>Web dictaphone is built using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator.getUserMedia">getUserMedia</a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder_API">MediaRecorder API</a>, which provides an easier way to capture Media streams.</p>
 
-        <p>Icon courtesy of <a href="http://findicons.com/search/microphone">Find Icons</a>. Thanks to <a href="http://soledadpenades.com/">Sole</a> for the Oscilloscope code!</p>
-    </aside>
-    <script src="js/record.js"></script>
+
+
+
+<!--        <section class="main-controls">-->
+<!--            <canvas class="visualizer" height="60px"></canvas>-->
+<!--            <div id="buttons">-->
+<!--                <button class="record">Record</button>-->
+<!--                <button class="stop">Stop</button>-->
+<!--            </div>-->
+<!--        </section>-->
+<!--        <section class="sound-clips">-->
+<!--        </section>-->
+<!--    </div>-->
+<!--    <label for="toggle">?</label>-->
+<!--    <input type="checkbox" id="toggle">-->
+<!--    <aside>-->
+<!--        <h2>Information</h2>-->
+
+<!--        <p>Web dictaphone is built using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator.getUserMedia">getUserMedia</a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder_API">MediaRecorder API</a>, which provides an easier way to capture Media streams.</p>-->
+
+<!--        <p>Icon courtesy of <a href="http://findicons.com/search/microphone">Find Icons</a>. Thanks to <a href="http://soledadpenades.com/">Sole</a> for the Oscilloscope code!</p>-->
+<!--    </aside>-->
+<!--    <script src="js/record.js"></script>-->
+
 </body>
 </html>

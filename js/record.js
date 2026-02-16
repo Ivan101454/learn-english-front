@@ -41,3 +41,25 @@ stop.onclick = () => {
     record.style.background = "";
     record.style.color = "";
 }
+
+mediaRecorder.onstop = async (e) => {
+    const clipName = prompt("Enter the name of rhe record");
+    const blob = new Blob(chunks, { type: "audio/webm; codecs=opus" });
+    chunks = [];
+    const formData = new FormData();
+    formData.append("file", blob, `${clipName}.webm`);
+
+    try {
+        const response = await fetch("http://localhost:8080/audio/upload", {
+            method: "POST",
+            body: formData
+        });
+
+        if (response.ok) {
+            console.log("The record is send");
+        }
+    } catch (error) {
+        console.error("Error: ", error);
+    }
+};
+
