@@ -1,3 +1,62 @@
+/* color */
+:root {
+    --c-whyte: hsl(0, 0%, 100%);
+    --c-light-gray: hsl(240, 26%, 93%);
+    --c-middle-gray: hsl(240, 16%, 76%);
+    --c-dark-gray: hsl(240, 12%, 60%);
+    --c-dark: hsl(240, 11%, 36%);
+    --c-high-dark: hsl(0, 0%, 0%);
+    --c-light-blue: hsl(195, 100%, 70%);
+    --c-blue: hsl(195, 97%, 59%);
+    --c-dark-blue: hsl(230, 100%, 70%);
+    --с-brown: hsl(350, 43%, 35%);
+    --c-green: hsl(150, 43%, 49%);
+    --c-transparent: transparent;
+
+
+    --color-main-bg: var(--c-whyte);
+    --color-second-bg: var(--c-light-gray);
+
+    --color-text-light: var(--c-middle-gray);
+    --color-text-middle: var(--c-dark-gray);
+    --color-text-dark: var(--c-dark);
+    --color-text-dark-high: var(--c-high-dark);
+    --color-text-brown: var(--с-brown);
+    --color-text-green: var(--c-green);
+    --color-text-paragraph: var(--c-blue);
+
+    --color-button-primary: var(--c-transparent);
+    --color-button-second-bg: var(--c-blue);
+    --color-button-time-bg: var(--c-light-blue);
+    --color-button-text-primary: var(--c-middle-gray);
+    --color-button-text-second: var(--c-whyte);
+
+    --color-border: var(--c-middle-gray);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+
+
 .container {
     padding-inline: 20%;
 }
