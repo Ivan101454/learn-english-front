@@ -40,7 +40,32 @@
 }
 
 /* fonts */
+:root {
+    --fs-12: calc(12 / 16 * 1rem);
+    --fs-16: calc(14 / 16 * 1rem);
+    --fs-18: calc(18 / 16 * 1rem);
+    --fs-20: calc(20 / 16 * 1rem);
+    --fs-30: calc(30 / 16 * 1rem);
 
+    --font-size-nav-btn: var(--fs-16);
+    --font-size-nav-progress: var(--fs-12);
+    --font-size-main-title: var(--fs-30);
+    --fs-size-number-block: var(--fs-16);
+    --font-size-exercise-title: var(--fs-20);
+    --font-size-exercise-text: var(--fs-18);
+    --font-size-pagination-text: var(--fs-16);
+    --font-size-pagination-btn: var(--fs-16);
+    --font-size-number-lesson: var(--fs-12);
+    --font-size-section-title: var(--fs-18);
+    --font-size-section-item: var(--fs-16);
+    --font-size-audio-title: var(--fs-18);
+    
+    /*@media (width >= calc(600 / 16 * 1rem)) {*/
+
+    /*}*/
+
+
+}
 
 /* color */
 :root {
@@ -104,7 +129,7 @@ svg {
 }
 
 .wrapper {
-    width: min(calc(100% - 16px), 1200 / 16 * 1rem);
+    width: min(calc(100% - 16px), calc(1200 / 16 * 1rem));
     margin-inline: auto;
 }
 
