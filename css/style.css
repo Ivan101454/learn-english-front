@@ -1,137 +1,192 @@
-/* ubuntu-300 - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 300;
-    src: url('../fonts/ubuntu-v21-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+@layer global, component, utility;
+
+@layer global {
+    /* ubuntu-300 - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        src: url('../fonts/ubuntu-v21-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* ubuntu-regular - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        src: url('../fonts/ubuntu-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* ubuntu-500 - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        src: url('../fonts/ubuntu-v21-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* ubuntu-500italic - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Ubuntu';
+        font-style: italic;
+        font-weight: 500;
+        src: url('../fonts/ubuntu-v21-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* ubuntu-700 - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        src: url('../fonts/ubuntu-v21-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+
+    /* fonts */
+    :root {
+        --fs-12: calc(12 / 16 * 1rem);
+        --fs-16: calc(14 / 16 * 1rem);
+        --fs-18: calc(18 / 16 * 1rem);
+        --fs-20: calc(20 / 16 * 1rem);
+        --fs-30: calc(30 / 16 * 1rem);
+
+        --lh-1-15: 1.15;
+        --lh-1-44: 1.44;
+        --lh-1-6: 1.6;
+
+        --lh-h1-main-title: var(--lh-1-15);
+        --lh-h2-exercise-title: var(--lh-1-6);
+        --lh-exercise-text: var(--lh-1-44);
+
+        --font-size-nav-btn: var(--fs-16);
+        --font-size-nav-progress: var(--fs-12);
+        --font-size-h1-main-title: var(--fs-30);
+        --fs-size-number-block: var(--fs-16);
+        --font-size-exercise-title: var(--fs-20);
+        --font-size-exercise-text: var(--fs-18);
+        --font-size-pagination-text: var(--fs-16);
+        --font-size-pagination-btn: var(--fs-16);
+        --font-size-number-lesson: var(--fs-12);
+        --font-size-section-title: var(--fs-18);
+        --font-size-section-item: var(--fs-16);
+        --font-size-audio-title: var(--fs-18);
+
+        /*@media (width >= calc(600 / 16 * 1rem)) {*/
+
+        /*}*/
+
+
+    }
+
+    /* color */
+    :root {
+        --c-whyte: hsl(0, 0%, 100%);
+        --c-light-gray: hsl(240, 26%, 93%);
+        --c-middle-gray: hsl(240, 16%, 76%);
+        --c-dark-gray: hsl(240, 12%, 60%);
+        --c-dark: hsl(240, 11%, 36%);
+        --c-high-dark: hsl(0, 0%, 0%);
+        --c-light-blue: hsl(195, 100%, 70%);
+        --c-blue: hsl(195, 97%, 59%);
+        --c-dark-blue: hsl(230, 100%, 70%);
+        --с-brown: hsl(350, 43%, 35%);
+        --c-green: hsl(150, 43%, 49%);
+        --c-transparent: transparent;
+
+
+        --color-main-bg: var(--c-whyte);
+        --color-second-bg: var(--c-light-gray);
+
+        --color-text-light: var(--c-middle-gray);
+        --color-text-middle: var(--c-dark-gray);
+        --color-text-dark: var(--c-dark);
+        --color-text-dark-high: var(--c-high-dark);
+        --color-text-brown: var(--с-brown);
+        --color-text-green: var(--c-green);
+        --color-text-paragraph: var(--c-blue);
+
+        --color-button-primary: var(--c-transparent);
+        --color-button-second-bg: var(--c-blue);
+        --color-button-time-bg: var(--c-light-blue);
+        --color-button-text-primary: var(--c-middle-gray);
+        --color-button-text-second: var(--c-whyte);
+
+        --color-border: var(--c-middle-gray);
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    * {
+        margin: 0;
+    }
+
+    body {
+        font-family: "Ubuntu", "Arial", sans-serif;
+    }
+
+    h1 {
+        font-size: var(--font-size-h1-main-title);
+        line-height: var(--lh-1-15);
+    }
+
+    h2 {
+        font-size: var(--font-size-exercise-title);
+        line-height: var(--lh-h2-exercise-title);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    img,
+    picture,
+    svg {
+        max-width: 100%;
+        display: block;
+    }
+
+    .wrapper {
+        width: min(calc(100% - 16px), calc(1200 / 16 * 1rem));
+        margin-inline: auto;
+    }
 }
-/* ubuntu-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/ubuntu-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* ubuntu-500 - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/ubuntu-v21-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* ubuntu-500italic - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Ubuntu';
-    font-style: italic;
-    font-weight: 500;
-    src: url('../fonts/ubuntu-v21-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* ubuntu-700 - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/ubuntu-v21-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+
+@layer component {
+    .top-nav {
+
+        .top-nav__logo {
+            aspect-ratio: 1 / 1;
+        }
+    }
 }
 
-/* fonts */
-:root {
-    --fs-12: calc(12 / 16 * 1rem);
-    --fs-16: calc(14 / 16 * 1rem);
-    --fs-18: calc(18 / 16 * 1rem);
-    --fs-20: calc(20 / 16 * 1rem);
-    --fs-30: calc(30 / 16 * 1rem);
+@layer utility {
+    .visually-hidden {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
 
-    --font-size-nav-btn: var(--fs-16);
-    --font-size-nav-progress: var(--fs-12);
-    --font-size-main-title: var(--fs-30);
-    --fs-size-number-block: var(--fs-16);
-    --font-size-exercise-title: var(--fs-20);
-    --font-size-exercise-text: var(--fs-18);
-    --font-size-pagination-text: var(--fs-16);
-    --font-size-pagination-btn: var(--fs-16);
-    --font-size-number-lesson: var(--fs-12);
-    --font-size-section-title: var(--fs-18);
-    --font-size-section-item: var(--fs-16);
-    --font-size-audio-title: var(--fs-18);
-    
-    /*@media (width >= calc(600 / 16 * 1rem)) {*/
-
-    /*}*/
-
-
+        &.skip:focus {
+            left: 0;
+            width: auto;
+            height: auto;
+            background: var(--c-whyte);
+            padding: 10px;
+            border: 1px solid;
+        }
+    }
 }
 
-/* color */
-:root {
-    --c-whyte: hsl(0, 0%, 100%);
-    --c-light-gray: hsl(240, 26%, 93%);
-    --c-middle-gray: hsl(240, 16%, 76%);
-    --c-dark-gray: hsl(240, 12%, 60%);
-    --c-dark: hsl(240, 11%, 36%);
-    --c-high-dark: hsl(0, 0%, 0%);
-    --c-light-blue: hsl(195, 100%, 70%);
-    --c-blue: hsl(195, 97%, 59%);
-    --c-dark-blue: hsl(230, 100%, 70%);
-    --с-brown: hsl(350, 43%, 35%);
-    --c-green: hsl(150, 43%, 49%);
-    --c-transparent: transparent;
 
 
-    --color-main-bg: var(--c-whyte);
-    --color-second-bg: var(--c-light-gray);
 
-    --color-text-light: var(--c-middle-gray);
-    --color-text-middle: var(--c-dark-gray);
-    --color-text-dark: var(--c-dark);
-    --color-text-dark-high: var(--c-high-dark);
-    --color-text-brown: var(--с-brown);
-    --color-text-green: var(--c-green);
-    --color-text-paragraph: var(--c-blue);
-
-    --color-button-primary: var(--c-transparent);
-    --color-button-second-bg: var(--c-blue);
-    --color-button-time-bg: var(--c-light-blue);
-    --color-button-text-primary: var(--c-middle-gray);
-    --color-button-text-second: var(--c-whyte);
-
-    --color-border: var(--c-middle-gray);
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-* {
-    margin: 0;
-}
-
-body {
-    font-family: "Ubuntu", "Arial", sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-img,
-picture,
-svg {
-    max-width: 100%;
-    display: block;
-}
-
-.wrapper {
-    width: min(calc(100% - 16px), calc(1200 / 16 * 1rem));
-    margin-inline: auto;
-}
 
 
 

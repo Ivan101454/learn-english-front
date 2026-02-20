@@ -14,10 +14,35 @@
     <link rel="manifest" href="/site.webmanifest" />
 </head>
 <body>
-<div class="wrapper">
-        <header>
-            <h1>Web dictaphone</h1>
-        </header>
+<a class="visually-hidden skip" href="#main"></a>
+<header class="top-nav">
+    <a href="/" class="top-nav__home-link">
+        <img
+                class="top-nav__logo"
+                src="./image/logo.svg"
+                alt="english-logo"
+                width="32px" loading="lazy"
+        >
+    </a>
+    <nav>
+        <ul class="top-nav__links">
+            <li class="top-nav__item">
+                <a href="/" class="top-nav-link">Another lesson</a>
+            </li>
+            <li class="top-nav__item">
+                <a href="/" class="top-nav-link">Exit</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main id="main">
+    <div class="wrapper">
+        <h2 class="visually-hidden">1B_A place to live</h2>
+        <h1>Vocabulary</h1>
+        <h2>Discuss the questions.</h2>
+        <div>
+            <p>1. How often do people usually move house in your country?</p>
+        </div>
         <div class="audio-recording-block">
             <div class="audio-recording-text">
                 <p>Answer the questions.</p>
@@ -32,12 +57,11 @@
                 </button>
             </div>
         </div>
-</div>
-
-
-
-
-
+    </div>
+</main>
+<footer>
+    <h2 class="visually-hidden">Footer</h2>
+</footer>
 <!--        <section class="main-controls">-->
 <!--            <canvas class="visualizer" height="60px"></canvas>-->
 <!--            <div id="buttons">-->
