@@ -1,0 +1,70 @@
+/* ubuntu-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/ubuntu-v21-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ubuntu-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ubuntu-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ubuntu-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/ubuntu-v21-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ubuntu-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/ubuntu-v21-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ubuntu-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/ubuntu-v21-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* fonts */
+:root {
+  --fs-12: calc(12 / 16 * 1rem);
+  --fs-16: calc(14 / 16 * 1rem);
+  --fs-18: calc(18 / 16 * 1rem);
+  --fs-20: calc(20 / 16 * 1rem);
+  --fs-30: calc(30 / 16 * 1rem);
+
+  --lh-1-15: 1.15;
+  --lh-1-44: 1.44;
+  --lh-1-6: 1.6;
+
+  --lh-h1-main-title: var(--lh-1-15);
+  --lh-h2-exercise-title: var(--lh-1-6);
+  --lh-exercise-text: var(--lh-1-44);
+
+  --font-size-nav-btn: var(--fs-16);
+  --font-size-nav-progress: var(--fs-12);
+  --font-size-h1-main-title: var(--fs-30);
+  --fs-size-number-block: var(--fs-16);
+  --font-size-exercise-title: var(--fs-20);
+  --font-size-exercise-text: var(--fs-18);
+  --font-size-pagination-text: var(--fs-16);
+  --font-size-pagination-btn: var(--fs-16);
+  --font-size-number-lesson: var(--fs-12);
+  --font-size-section-title: var(--fs-18);
+  --font-size-section-item: var(--fs-16);
+  --font-size-audio-title: var(--fs-18);
+}
