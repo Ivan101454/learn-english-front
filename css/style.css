@@ -339,6 +339,7 @@ template {
   --с-brown: hsl(350, 43%, 35%);
   --c-green: hsl(150, 43%, 49%);
   --c-transparent: transparent;
+  --border-radius: 16px;
   --color-main-bg: var(--c-whyte);
   --color-second-bg: var(--c-light-gray);
   --color-text-light: var(--c-middle-gray);
@@ -354,6 +355,8 @@ template {
   --color-button-text-primary: var(--c-middle-gray);
   --color-button-text-second: var(--c-whyte);
   --color-border: var(--c-middle-gray);
+  --color-shadow: var(--c-middle-gray);
+  --box-radius: var(--border-radius);
 }
 
 /* ubuntu-300 - latin */
@@ -409,10 +412,11 @@ template {
   --lh-h1-main-title: var(--lh-1-15);
   --lh-h2-exercise-title: var(--lh-1-6);
   --lh-exercise-text: var(--lh-1-44);
+  --fw-700: 700;
   --font-size-nav-btn: var(--fs-16);
   --font-size-nav-progress: var(--fs-12);
   --font-size-h1-main-title: var(--fs-30);
-  --fs-size-number-block: var(--fs-16);
+  --font-size-number-block: var(--fs-16);
   --font-size-exercise-title: var(--fs-20);
   --font-size-exercise-text: var(--fs-18);
   --font-size-pagination-text: var(--fs-16);
@@ -421,10 +425,75 @@ template {
   --font-size-section-title: var(--fs-18);
   --font-size-section-item: var(--fs-16);
   --font-size-audio-title: var(--fs-18);
+  --font-weigh-h1: var(--fw-700);
 }
 
-.top-nav__logo {
+* {
+  font-family: "Ubuntu", "Arial", sans-serif;
+  background-color: var(--color-main-bg);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.header {
+  height: 64px;
+  min-height: 64px;
+  width: 100%;
+  position: sticky;
+  padding-inline: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
   aspect-ratio: 1/1;
+  background-color: var(--color-main-bg);
+}
+.header__menu-list {
+  display: flex;
+  list-style-type: none;
+  background-color: var(--color-main-bg);
+}
+.header__menu-link {
+  text-decoration: none;
+}
+
+#main {
+  background-color: var(--color-second-bg);
+}
+
+.wrapper {
+  margin-inline: auto;
+  padding: 16px;
+  width: min(100% - 16px, 75rem);
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+  background-color: var(--color-second-bg);
+}
+
+.content-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 45rem;
+  box-shadow: 0 0 16px 0 var(--color-shadow);
+  border-radius: var(--box-radius);
+  overflow: hidden;
+}
+.content-main h1 {
+  margin: 0 !important;
+  padding: 20px 32px 26px;
+  font-size: var(--font-size-h1-main-title);
+  font-weight: var(--font-weigh-h1);
+  line-height: var(--lh-h1-main-title);
+  text-align: left;
+  color: var(--color-text-dark);
+}
+.content-main__exercise-list {
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */

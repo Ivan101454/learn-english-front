@@ -1,0 +1,14 @@
+#main {
+  background-color: var(--color-second-bg);
+}
+
+.wrapper {
+  margin-inline: auto;
+  padding: 16px;
+  width: min(calc(100% - 16px), calc(1200 / 16 * 1rem));
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+  background-color: var(--color-second-bg);
+}
+

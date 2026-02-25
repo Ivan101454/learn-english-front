@@ -15,69 +15,95 @@
 </head>
 <body>
 <a class="visually-hidden skip" href="#main"></a>
-<header class="top-nav">
-    <a href="/" class="top-nav__home-link">
+<header class="header">
+    <a href="/" class="header__home-link">
         <img
-                class="top-nav__logo"
+                class="header__logo"
                 src="./image/logo.svg"
                 alt="english-logo"
                 width="32px" loading="lazy"
         >
     </a>
-    <nav>
-        <ul class="top-nav__links">
-            <li class="top-nav__item">
-                <a href="/" class="top-nav-link">Another lesson</a>
+    <nav class="header__menu">
+        <ul class="header__menu-list">
+            <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Another lesson</a>
             </li>
-            <li class="top-nav__item">
-                <a href="/" class="top-nav-link">Exit</a>
+            <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Exit</a>
             </li>
         </ul>
     </nav>
 </header>
 <main id="main">
     <div class="wrapper">
-        <h2 class="visually-hidden">1B_A place to live</h2>
-        <h1>Vocabulary</h1>
-        <h2>Discuss the questions.</h2>
-        <div>
-            <p>1. How often do people usually move house in your country?</p>
-        </div>
-        <div class="audio-recording-block">
-            <div class="audio-recording-text">
-                <p>Answer the questions.</p>
-            </div>
-            <div class="audio-recording">
-                <button class="audio-recording__button">
+        <section class="content-main">
+            <h1>Vocabulary</h1>
+            <div class="content-main__exercise-list-wrapper">
+                <ul class="content-main__exercise-list">
+                    <li class="content-main__exercise-item">
+                        <div class="content-main__exercise-title">
+                            <p>1. How often do people usually move house in your country?</p>
+                        </div>
+                        <div class="content-main__exercise-record audio-recording-block">
+                            <div class="audio-recording-text">
+                                <p>Answer the questions.</p>
+                            </div>
+                            <div class="audio-recording">
+                                <button class="audio-recording__button">
                     <span class="audio-recording__microphone-pic">
                         <i class="fas fa-microphone"></i>
                     </span>
-                    <span class="audio-recording__text">Start Record</span>
-                    <span class="audio-recording__time">03:00</span>
-                </button>
-                <div class="audio-recording__exercise-item audio-info">
-                    <div class="audio-info__item">
-                        <div class="audio-info__title">
-                            <p>Voice is recorded</p>
-                        </div>
-                        <div class="audio-info__time-wrapper">
-                            <div class="audio-info__audio-timer">3:00</div>
-                            <div class="audio-info__popover-element popover">
-                                <div class="popover__audio-option-button"></div>
+                                    <span class="audio-recording__text">Start Record</span>
+                                    <span class="audio-recording__time">03:00</span>
+                                </button>
+                                <div class="audio-recording__exercise-item audio-info">
+                                    <div class="audio-info__item">
+                                        <div class="audio-info__title">
+                                            <p>Voice is recorded</p>
+                                        </div>
+                                        <div class="audio-info__time-wrapper">
+                                            <div class="audio-info__audio-timer">3:00</div>
+                                            <div class="audio-info__popover-element popover">
+                                                <div class="popover__audio-option-button"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="audio-controls">
+                                    <div class="audio-controls__recording-button"></div>
+                                    <div class="audio-controls__play-pause-button"></div>
+                                    <div class="audio-controls__volume-button"></div>
+                                    <div class="audio-controls__audio-slider"></div>
+                                    <div class="audio-controls__delete-button"></div>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="audio-controls">
-                    <div class="audio-controls__recording-button"></div>
-                    <div class="audio-controls__play-pause-button"></div>
-                    <div class="audio-controls__volume-button"></div>
-                    <div class="audio-controls__audio-slider"></div>
-                    <div class="audio-controls__delete-button"></div>
-                </div>
+                    </li>
+                </ul>
 
             </div>
-        </div>
+            <div class="content-main__main-footer">
+                <p>1 from 6</p>
+                <p>next page</p>
+            </div>
+        </section>
+        <section class="content-right">
+            <div class="lesson-title">
+                <h2>1B_A place to live</h2>
+            </div>
+            <h2 class="sections">Sections</h2>
+            <ul>
+                <li>Vocabulary</li>
+                <li>Listening</li>
+                <li>Grammar</li>
+                <li>Speaking</li>
+                <li>Homework</li>
+                <li>Commit lesson</li>
+            </ul>
+        </section>
+
     </div>
 </main>
 <footer>

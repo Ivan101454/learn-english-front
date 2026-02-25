@@ -1,0 +1,24 @@
+.content-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: calc(720 / 16 * 1rem);
+  box-shadow: 0 0 16px 0 var(--color-shadow);
+  border-radius: var(--box-radius);
+  overflow: hidden;
+
+  h1 {
+    margin: 0 !important;
+    padding: 20px 32px 26px;
+    font-size: var(--font-size-h1-main-title);
+    font-weight: var(--font-weigh-h1);
+    line-height: var(--lh-h1-main-title);
+    text-align: left;
+    color: var(--color-text-dark);
+  }
+
+  &__exercise-list {
+    list-style: none;
+  }
+}
+

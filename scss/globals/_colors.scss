@@ -11,7 +11,9 @@
   --c-dark-blue: hsl(230, 100%, 70%);
   --с-brown: hsl(350, 43%, 35%);
   --c-green: hsl(150, 43%, 49%);
+
   --c-transparent: transparent;
+  --border-radius: 16px;
 
 
   --color-main-bg: var(--c-whyte);
@@ -32,4 +34,7 @@
   --color-button-text-second: var(--c-whyte);
 
   --color-border: var(--c-middle-gray);
+  --color-shadow: var(--c-middle-gray);
+
+  --box-radius: var(--border-radius);
 }

@@ -1,0 +1,42 @@
+* {
+  font-family: "Ubuntu", "Arial", sans-serif;
+  background-color: var(--color-main-bg);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+///* 1. Use a more-intuitive box-sizing model */
+//*, *::before, *::after {
+//  box-sizing: border-box;
+//}
+//
+///* 2. Remove default margins and paddings for all elements */
+//* {
+//  margin: 0;
+//  padding: 0;
+//}
+//
+///* 3. Improve text rendering and accessible line-height */
+//body {
+//  //line-height: 1.5;
+//  //-webkit-font-smoothing: antialiased;
+//  min-height: 100vh;
+//}
+//
+///* 4. Make media elements easier to work with */
+//img, picture, video, canvas, svg {
+//  display: block;
+//  max-width: 100%;
+//}
+//
+///* 5. Inherit fonts for form controls */
+//input, button, textarea, select {
+//  font: inherit;
+//}
+//
+///* 6. Avoid text overflows on long words */
+//p, h1, h2, h3, h4, h5, h6 {
+//  overflow-wrap: break-word;
+//}
