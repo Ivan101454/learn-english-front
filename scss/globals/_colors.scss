@@ -3,6 +3,7 @@
   --c-whyte: hsl(0, 0%, 100%);
   --c-light-gray: hsl(240, 26%, 93%);
   --c-middle-gray: hsl(240, 16%, 76%);
+  --c-gray: hsl(240, 10%, 55%);
   --c-dark-gray: hsl(240, 12%, 60%);
   --c-dark: hsl(240, 11%, 36%);
   --c-high-dark: hsl(0, 0%, 0%);
@@ -21,6 +22,7 @@
 
   --color-text-light: var(--c-middle-gray);
   --color-text-middle: var(--c-dark-gray);
+  --color-text-exercise-gray: var(--c-gray);
   --color-text-dark: var(--c-dark);
   --color-text-dark-high: var(--c-high-dark);
   --color-text-brown: var(--с-brown);
