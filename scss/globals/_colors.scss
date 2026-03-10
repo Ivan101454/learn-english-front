@@ -3,6 +3,7 @@
   --c-whyte: hsl(0, 0%, 100%);
   --c-light-gray: hsl(240, 26%, 93%);
   --c-middle-gray: hsl(240, 16%, 76%);
+  --c-gray: hsl(240, 10%, 55%);
   --c-dark-gray: hsl(240, 12%, 60%);
   --c-dark: hsl(240, 11%, 36%);
   --c-high-dark: hsl(0, 0%, 0%);
@@ -11,7 +12,9 @@
   --c-dark-blue: hsl(230, 100%, 70%);
   --с-brown: hsl(350, 43%, 35%);
   --c-green: hsl(150, 43%, 49%);
+
   --c-transparent: transparent;
+  --border-radius: 16px;
 
 
   --color-main-bg: var(--c-whyte);
@@ -19,6 +22,7 @@
 
   --color-text-light: var(--c-middle-gray);
   --color-text-middle: var(--c-dark-gray);
+  --color-text-exercise-gray: var(--c-gray);
   --color-text-dark: var(--c-dark);
   --color-text-dark-high: var(--c-high-dark);
   --color-text-brown: var(--с-brown);
@@ -32,4 +36,7 @@
   --color-button-text-second: var(--c-whyte);
 
   --color-border: var(--c-middle-gray);
+  --color-shadow: var(--c-middle-gray);
+
+  --box-radius: var(--border-radius);
 }

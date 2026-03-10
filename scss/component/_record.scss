@@ -1,0 +1,63 @@
+@use '../util/mixins';
+
+.audio-recording {
+  padding-right: 2rem;
+
+  &__button {
+    width: 100%;
+    @include mixins.rem-calc(height, 56);
+    border: 1px solid var(--color-border);
+    border-radius: var(--box-radius);
+    font-size: var(--font-size-exercise-text);
+    font-weight: var(--font-weigh-text-button);
+    line-height: var(--lh-exercise-text);
+    color: var(--color-text-exercise-gray);
+
+
+    span {
+      background-color: var(--c-transparent);
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--color-button-second-bg);
+      color: var(--color-main-bg);
+    }
+  }
+
+  &__microphone-pic {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url('/image/icons/mic.svg') no-repeat center / contain;
+  }
+
+  &__text {
+    margin-inline: 6px;
+  }
+
+  &__time {
+    padding-inline: 8px;
+  }
+
+  &__exercise-item {
+    //display: none;
+  }
+}
+
+.audio-info {
+  &__text-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    color: var(--color-text-brown);
+  }
+  &__progress-item {
+    audio {
+      width: 100%;
+    }
+  }
+
+}

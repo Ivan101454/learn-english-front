@@ -1,6 +1,41 @@
-.top-nav {
+.header {
+  height: 64px;
+  min-height: 64px;
+  width: 100%;
+  position: sticky;
+  padding-inline: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__home-link {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    text-decoration: none;
+    color: var(--color-text-dark);
+    font-weight: var(--fw-700);
+  }
 
   &__logo {
     aspect-ratio: 1 / 1;
+    background-color: var(--color-main-bg);
+  }
+
+  &__menu {
+
+    &-list {
+      display: flex;
+      list-style-type: none;
+      background-color: var(--color-main-bg);
+    }
+
+    &-item {
+
+    }
+
+    &-link {
+      text-decoration: none;
+    }
   }
 }
