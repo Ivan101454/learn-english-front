@@ -40,5 +40,24 @@
     padding-inline: 8px;
   }
 
+  &__exercise-item {
+    //display: none;
+  }
+}
+
+.audio-info {
+  &__text-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    color: var(--color-text-brown);
+  }
+  &__progress-item {
+    audio {
+      width: 100%;
+    }
+  }
 
 }

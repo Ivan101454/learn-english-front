@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My-english</title>
+    <title>MyVibe</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -23,6 +23,7 @@
                 alt="english-logo"
                 width="32px" loading="lazy"
         >
+        <span>MyVibe</span>
     </a>
     <nav class="header__menu">
         <ul class="header__menu-list">
@@ -56,24 +57,21 @@
                                     <span class="audio-recording__time">03:00</span>
                                 </button>
                                 <div class="audio-recording__exercise-item audio-info">
-                                    <div class="audio-info__item">
+                                    <div class="audio-info__text-item">
                                         <div class="audio-info__title">
                                             <p>Voice is recorded</p>
                                         </div>
                                         <div class="audio-info__time-wrapper">
-                                            <div class="audio-info__audio-timer">3:00</div>
-                                            <div class="audio-info__popover-element popover">
-                                                <div class="popover__audio-option-button"></div>
-                                            </div>
+                                            <div class="audio-info__audio-timer">0:00 / 3:00</div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="audio-controls">
-                                    <div class="audio-controls__recording-button"></div>
-                                    <div class="audio-controls__play-pause-button"></div>
-                                    <div class="audio-controls__volume-button"></div>
-                                    <div class="audio-controls__audio-slider"></div>
-                                    <div class="audio-controls__delete-button"></div>
+                                    <div class="audio-info__progress-item audio-control">
+                                        <audio controls>Audio</audio>
+                                    </div>
+                                    <div class="audio-info__buttons-item">
+                                        <button class="audio-info__save-button">Save</button>
+                                        <button class="audio-info__cancel-button">Cancel</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

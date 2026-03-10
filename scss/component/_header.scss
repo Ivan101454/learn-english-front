@@ -8,6 +8,15 @@
   justify-content: space-between;
   align-items: center;
 
+  &__home-link {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    text-decoration: none;
+    color: var(--color-text-dark);
+    font-weight: var(--fw-700);
+  }
+
   &__logo {
     aspect-ratio: 1 / 1;
     background-color: var(--color-main-bg);
