@@ -80,7 +80,7 @@
 
     /* color */
     :root {
-        --c-whyte: hsl(0, 0%, 100%);
+        --c-white: hsl(0, 0%, 100%);
         --c-light-gray: hsl(240, 26%, 93%);
         --c-middle-gray: hsl(240, 16%, 76%);
         --c-dark-gray: hsl(240, 12%, 60%);
@@ -94,7 +94,7 @@
         --c-transparent: transparent;
 
 
-        --color-main-bg: var(--c-whyte);
+        --color-main-bg: var(--c-white);
         --color-second-bg: var(--c-light-gray);
 
         --color-text-light: var(--c-middle-gray);
@@ -109,7 +109,7 @@
         --color-button-second-bg: var(--c-blue);
         --color-button-time-bg: var(--c-light-blue);
         --color-button-text-primary: var(--c-middle-gray);
-        --color-button-text-second: var(--c-whyte);
+        --color-button-text-second: var(--c-white);
 
         --color-border: var(--c-middle-gray);
     }
@@ -177,7 +177,7 @@
             left: 0;
             width: auto;
             height: auto;
-            background: var(--c-whyte);
+            background: var(--c-white);
             padding: 10px;
             border: 1px solid;
         }

@@ -1,7 +1,8 @@
 /* color */
 :root {
-  --c-whyte: hsl(0, 0%, 100%);
+  --c-white: hsl(0, 0%, 100%);
   --c-light-gray: hsl(240, 26%, 93%);
+  --color-light-light-grey: hsl(0, 0%, 96%);
   --c-middle-gray: hsl(240, 16%, 76%);
   --c-gray: hsl(240, 10%, 55%);
   --c-dark-gray: hsl(240, 12%, 60%);
@@ -15,9 +16,10 @@
 
   --c-transparent: transparent;
   --border-radius: 16px;
+  --border-radius-btn: 8px;
 
 
-  --color-main-bg: var(--c-whyte);
+  --color-main-bg: var(--c-white);
   --color-second-bg: var(--c-light-gray);
 
   --color-text-light: var(--c-middle-gray);
@@ -32,11 +34,13 @@
   --color-button-primary: var(--c-transparent);
   --color-button-second-bg: var(--c-blue);
   --color-button-time-bg: var(--c-light-blue);
+  --color-button-light-light-grey: var(--color-light-light-grey);
   --color-button-text-primary: var(--c-middle-gray);
-  --color-button-text-second: var(--c-whyte);
+  --color-button-text-second: var(--c-white);
 
   --color-border: var(--c-middle-gray);
   --color-shadow: var(--c-middle-gray);
 
   --box-radius: var(--border-radius);
+  --button-radius: var(--border-radius-btn);
 }

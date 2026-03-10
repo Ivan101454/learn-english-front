@@ -320,15 +320,16 @@ template {
   left: 0;
   width: auto;
   height: auto;
-  background: var(--c-whyte);
+  background: var(--c-);
   padding: 10px;
   border: 1px solid;
 }
 
 /* color */
 :root {
-  --c-whyte: hsl(0, 0%, 100%);
+  --c-white: hsl(0, 0%, 100%);
   --c-light-gray: hsl(240, 26%, 93%);
+  --color-light-light-grey: hsl(0, 0%, 96%);
   --c-middle-gray: hsl(240, 16%, 76%);
   --c-gray: hsl(240, 10%, 55%);
   --c-dark-gray: hsl(240, 12%, 60%);
@@ -341,7 +342,8 @@ template {
   --c-green: hsl(150, 43%, 49%);
   --c-transparent: transparent;
   --border-radius: 16px;
-  --color-main-bg: var(--c-whyte);
+  --border-radius-btn: 8px;
+  --color-main-bg: var(--c-white);
   --color-second-bg: var(--c-light-gray);
   --color-text-light: var(--c-middle-gray);
   --color-text-middle: var(--c-dark-gray);
@@ -354,11 +356,13 @@ template {
   --color-button-primary: var(--c-transparent);
   --color-button-second-bg: var(--c-blue);
   --color-button-time-bg: var(--c-light-blue);
+  --color-button-light-light-grey: var(--color-light-light-grey);
   --color-button-text-primary: var(--c-middle-gray);
-  --color-button-text-second: var(--c-whyte);
+  --color-button-text-second: var(--c-white);
   --color-border: var(--c-middle-gray);
   --color-shadow: var(--c-middle-gray);
   --box-radius: var(--border-radius);
+  --button-radius: var(--border-radius-btn);
 }
 
 /* ubuntu-300 - latin */
@@ -556,6 +560,35 @@ template {
 }
 .audio-info__progress-item audio {
   width: 100%;
+}
+.audio-info__buttons-item {
+  cursor: pointer;
+}
+.audio-info__save-button {
+  cursor: inherit;
+  width: 5.625rem;
+  height: 1.875rem;
+  border-radius: var(--button-radius);
+  border: 1px solid var(--color-border);
+  font-size: var(--font-size-exercise-text);
+  font-weight: var(--font-weigh-text-button);
+  line-height: var(--lh-exercise-text);
+  color: var(--color-button-text-second);
+  background-color: var(--color-button-second-bg);
+}
+.audio-info__cancel-button {
+  cursor: inherit;
+  width: 5.625rem;
+  height: 1.875rem;
+  border-radius: var(--button-radius);
+  border: 1px solid var(--color-border);
+  font-size: var(--font-size-exercise-text);
+  background-color: var(--color-button-light-light-grey);
+  color: var(--color-text-middle);
+  font-weight: var(--font-weigh-text-button);
+}
+.audio-info__cancel-button:hover {
+  background-color: var(--color-second-bg);
 }
 
 /*# sourceMappingURL=style.css.map */
