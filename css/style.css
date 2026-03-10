@@ -550,6 +550,10 @@ template {
 .audio-recording__time {
   padding-inline: 8px;
 }
+.audio-recording__exercise-item {
+  display: none;
+}
+
 .audio-info__text-item {
   display: flex;
   justify-content: space-between;
