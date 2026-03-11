@@ -46,7 +46,8 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                 const audio = document.querySelector(".audio-control__item");
                 const blob = new Blob(chunks, { type: "audio/webm; codecs: opus"});
                 chunks = [];
-                audio.src = window.URL.createObjectURL(blob);
+                sentBlobToServer(blob);
+                loadAudioFromServer();
             }
 
         })
@@ -56,3 +57,29 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 } else {
     console.log("getUserMedia not supported on your browser!")
 }
+
+function sentBlobToServer(blob) {
+    const formData = new FormData();
+    formData.append("blob", blob, "recording.webm")
+
+    fetch("http://localhost:8081/english/audio", {
+        method: "POST",
+        body: formData,
+    })
+        .then(response => response.json())
+        .then(data => console.log("Sukces:", data))
+        .catch(error => console.error("Error is happened: " + error));
+}
+
+function loadAudioFromServer() {
+    fetch(`http://localhost:8081/english/audio/${audioName}`)
+        .then(response => {
+            if (!response.ok) throw new Error("Audio file not found");
+            return response.json()
+        })
+        .then(data => {
+            audio.src = data.url;
+        })
+        .catch(error => console.error("Error is happened: " + error));
+}
+
