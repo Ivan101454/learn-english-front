@@ -60,14 +60,14 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 
 function sentBlobToServer(blob) {
     const formData = new FormData();
-    formData.append("blob", blob, "recording.webm")
+    formData.append("audioFile", blob, "recording.webm")
 
-    fetch("http://localhost:8081/english/audio", {
+    fetch("http://localhost:8080/catalogue-api/audio/upload", {
         method: "POST",
         body: formData,
     })
         .then(response => response.json())
-        .then(data => console.log("Sukces:", data))
+        .then(data => console.log("Success:", data))
         .catch(error => console.error("Error is happened: " + error));
 }
 
