@@ -2,6 +2,8 @@ const record = document.querySelector(".audio-recording__button");
 const save = document.querySelector(".audio-info__save-button");
 const cancel = document.querySelector(".audio-info__cancel-button");
 const audioBlock = document.querySelector(".audio-recording__exercise-item");
+const audio = document.querySelector(".audio-control__item");
+
 
 if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 
@@ -43,11 +45,10 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             }
 
             mediaRecorder.onstop = (e) => {
-                const audio = document.querySelector(".audio-control__item");
                 const blob = new Blob(chunks, { type: "audio/webm; codecs: opus"});
                 chunks = [];
                 sentBlobToServer(blob);
-                loadAudioFromServer();
+                loadAudioFromServer("recording");
             }
 
         })
@@ -71,15 +72,15 @@ function sentBlobToServer(blob) {
         .catch(error => console.error("Error is happened: " + error));
 }
 
-function loadAudioFromServer() {
-    fetch(`http://localhost:8081/english/audio/${audioName}`)
+function loadAudioFromServer(audioName) {
+    fetch(`http://localhost:8080/catalogue-api/audio/${audioName}.webm`)
         .then(response => {
             if (!response.ok) throw new Error("Audio file not found");
-            return response.json()
+            return response.blob()
         })
-        .then(data => {
-            audio.src = data.url;
+        .then(blob => {
+            audio.src = URL.createObjectURL(blob);
         })
-        .catch(error => console.error("Error is happened: " + error));
+        .catch(error => console.error("Load error: " + error));
 }
 
