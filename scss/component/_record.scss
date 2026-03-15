@@ -1,5 +1,38 @@
 @use '../util/mixins' as m;
 
+.audio {
+  &__form {
+    margin-block: 1rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size-exercise-text);
+    color: var(--color-text-middle);
+    font-weight: var(--font-weigh-text-button);
+
+    input {
+      margin-right: 1rem;
+      border-radius: var(--button-radius);
+      border: 1px solid var(--color-border);
+      font-size: var(--font-size-exercise-text);
+      color: var(--color-text-middle);
+      font-weight: var(--font-weigh-text-button);
+    }
+
+    button {
+      cursor: pointer;
+      @include m.rem-calc(width, 90);
+      @include m.rem-calc(height, 30);
+      border-radius: var(--button-radius);
+      border: 1px solid var(--color-border);
+      font-size: var(--font-size-exercise-text);
+      background-color: var(--color-button-light-light-grey);
+      color: var(--color-text-middle);
+      font-weight: var(--font-weigh-text-button);
+    }
+  }
+}
+
 .audio-recording {
   padding-right: 2rem;
 
@@ -82,8 +115,8 @@
     @include m.rem-calc(height, 30);
     border-radius: var(--button-radius);
     border: 1px solid var(--color-border);
-    font-size: var(--font-size-exercise-text);
     background-color: var(--color-button-light-light-grey);
+    font-size: var(--font-size-exercise-text);
     color: var(--color-text-middle);
     font-weight: var(--font-weigh-text-button);
 

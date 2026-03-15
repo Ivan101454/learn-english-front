@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MyVibe</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+    <link rel="manifest" href="/site.webmanifest"/>
 </head>
 <body>
 <a class="visually-hidden skip" href="#main"></a>
@@ -46,11 +46,11 @@
                         <div class="content-main__exercise-title">
                             <p>1. How often do people usually move house in your country?</p>
                         </div>
-                        <div class="content-main__exercise-record audio-recording-block">
-                            <div class="audio-recording-text">
+                        <div class="content-main__exercise-record audio">
+                            <div class="audio__recording-text">
                                 <p>Answer the questions.</p>
                             </div>
-                            <div class="audio-recording">
+                            <div class="audio__item audio-recording">
                                 <button class="audio-recording__button">
                                     <i class="audio-recording__microphone-pic"></i>
                                     <span class="audio-recording__text">Start Record</span>
@@ -74,10 +74,15 @@
                                     </div>
                                 </div>
                             </div>
+                            <form action="http://localhost:8080/catalogue-api/audio" method="post" class="audio__form">
+                                Enter the name of an audio:<input
+                                    type="text" name="fileName" minlength="3"
+                                    maxlength="10">
+                                <button type="submit">Name</button>
+                            </form>
                         </div>
                     </li>
                 </ul>
-
             </div>
             <div class="content-main__main-footer">
                 <p>1 from 6</p>
