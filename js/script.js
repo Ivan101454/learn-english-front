@@ -67,7 +67,7 @@ function sentBlobToServer(blob) {
         method: "POST",
         body: formData,
     })
-        .then(response => response.json())
+        .then(response => response.text())
         .then(data => console.log("Success:", data))
         .catch(error => console.error("Error is happened: " + error));
 }
